@@ -1,0 +1,13 @@
+<header>
+    <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <a href="{% url 'pages:home'%}"> home page</a>| <a href="{% url 'pages:about'%}">About page</a>
+    {% if user.is_authenticated %}
+    <li><a href="{% url 'user_logout' %}">Logout</a></li>
+    {% else %}
+    <li><a href="{% url 'pages:user_login' %}">Login</a></li>
+    {% endif%}
+
+</header>
+{% block content %}
+{% endblock %}

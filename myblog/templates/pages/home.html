@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'pages/base.html' %}
+{% block content %}
+<h1>hey</h1>
+<h2>this from the dataBase</h2>
+<div>
+{% if list_records %}
+{% for lis in list_records %}
+<h2>{{ lis.date }}</h2>
+<h2>{{ lis.name }}</h2>
+<h2>{{ lis.post }}</h2>
+{% endfor %}
+{% else %}
+    <p>couldnt load </p>
+{% endif %}
+</div>
+{% endblock %}

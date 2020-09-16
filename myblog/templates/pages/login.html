@@ -1,0 +1,17 @@
+{% extends 'pages/base.html' %}
+{% block content %}
+
+<div class="jumbotron">
+<h1>pls login here with the detials required</h1>
+<form action="{% url 'pages:user_login' %}" method="POST">
+    {% csrf_token %}
+    <label for="username">Username:</label>
+    <input type="text" name="username" placeholder="enter username">
+
+    <label for="password">Password:</label>
+    <input type="password" name="password">
+
+    <input type="submit" value="Login">
+</form>
+</div>
+{% endblock %}
