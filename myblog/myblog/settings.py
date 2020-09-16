@@ -28,7 +28,7 @@ SECRET_KEY = 'ktj4i%&&#f3pu54xp67^36&lh+f#4d@_u&##*#lb07u6tb3_cb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['icemint.pythonanywhere.com']
 
 
 # Application definition
